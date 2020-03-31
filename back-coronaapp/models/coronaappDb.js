@@ -8,16 +8,19 @@ const connection = mysql.createConnection({
   database: db.database
 
 })
-const sql = 'SELECT * from users'
+const sql = 'SELECT * from user'
 connection.connect(function (err) {
   if (err) throw err
-  console.log('Connected!')
+  console.log('Connected to database coronaapp!')
 })
 
-connection.query(sql, function (err, rows, fields) {
+exports.getAllUsers = async () => {
+  await connection.query(sql, function (err, rows) {
   if (err) throw err
+  console.log(rows)
+  return rows
+  })
+  
+  
 
-  for (const i in rows) {
-    console.log('Name: ' + rows[i].name)
-  }
-})
+}

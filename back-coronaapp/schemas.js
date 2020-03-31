@@ -2,15 +2,16 @@ module.exports = `
 
   
 type Query {
-  users: String!
+  users: [User!]
 }
 
 type User {
-     name: String!
-     lastName: String!
-     sex: String!
-     age: Int!
-   }
+  id: Int!
+  name: String!
+  lastName: String!
+  sex: String!
+  age: Int!
+  }
 
 type Mutation {
   createUser (name: String): User
