@@ -1,27 +1,11 @@
-db = require('./models/coronaappDb')
+const db = require('./controllers/user')
 module.exports = {
 
   Query: {
-    users:   (_, args) => {
-      const allUsers =  db.getAllUsers()
-      //console.log('here: ', allUsers)
+    users: async (_, args) => {
+      const allUsers = await db.getAllUsers()
+      // console.log('here: ', allUsers)
       return allUsers
-      return [
-       {
-          id: 1,
-          name: 'Stev',
-          lastName: 'Beck',
-          sex: 'H',
-          age: 36
-        },
-        {
-          id: 2,
-          name: 'MArlon',
-          lastName: 'Becker',
-          sex: 'H',
-          age: 37
-        }
-      ]
     }
   },
 
