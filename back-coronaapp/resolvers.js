@@ -4,7 +4,6 @@ module.exports = {
   Query: {
     users: async (_, args) => {
       const allUsers = await db.getAllUsers()
-      // console.log('here: ', allUsers)
       return allUsers
     }
   },
