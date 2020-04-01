@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "apollo-server": "^2.11.0",
+    "ci": "^1.0.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "prettier": "^2.0.2",
