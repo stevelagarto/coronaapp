@@ -1,10 +1,14 @@
 {
   "name": "back-coronaapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "App for Coronavirus",
   "main": "index.js",
   "dependencies": {
     "apollo-server": "^2.11.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "husky": "^4.2.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "prettier": "^2.0.2",
@@ -23,5 +27,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevelagarto/coronaapp-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevelagarto/coronaapp-backend/issues"
+  },
+  "homepage": "https://github.com/stevelagarto/coronaapp-backend#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint"
+    }
+  }
 }
