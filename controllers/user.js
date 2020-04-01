@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 
-const db = require('../models')
+const db = require('../models');
 
 exports.getAllUsers = async () => {
   try {
-    return await db.User.findAll()
+    return await db.User.findAll();
   } catch (e) {
-    return e
+    return e;
   }
-}
+};

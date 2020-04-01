@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = function (connection, Sequelize) {
   const table = connection.define('User', {
@@ -6,7 +6,7 @@ module.exports = function (connection, Sequelize) {
     lastName: Sequelize.STRING,
     sex: Sequelize.STRING,
     age: Sequelize.INTEGER
-  })
+  });
 
-  return table
-}
+  return table;
+};

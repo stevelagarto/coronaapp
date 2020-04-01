@@ -16,4 +16,4 @@ type Mutation {
   createUser (name: String): User
 }
    
-`
+`;
