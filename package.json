@@ -4,7 +4,7 @@
   "description": "App for Coronavirus",
   "main": "index.js",
   "dependencies": {
-    "apollo-server": "^2.11.0",
+    "apollo-server": "^2.14.2",
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-load-plugins": "^2.0.2",
